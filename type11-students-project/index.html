@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="forms.js" defer></script>
+</head>
+<body>
+
+    <form>
+        
+            <div class="form-control">
+            <div id="students-list">
+                <label for="student-name">Name:</label>
+                <input type="text" placeholder = "Name" name="name" id="student-name" class="required">
+            </div>
+
+            <div>
+                <label for="student-surname">Last name:</label>
+                <input type="text" placeholder = "Last name" name="surname" id="student-surname" class="required">
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" placeholder = "Age" name="age" id="age" min="18" max="120" class="required">
+            </div>
+
+            <div>
+                <label for="tel">Tel.:</label>
+                <input type="tel" placeholder = "Phone number" name="tel" id="tel" class="required">
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder = "E-mail "name="email" id="email" class="required">
+            </div>
+
+            <div>
+                <label for="rating">IT knowledge:</label>
+                <input type="range" name="IT skill" id="rating" max="10" min="1" step="1" value="5">
+                <output for="rating" id="rating-output">5</output>
+
+            </div>
+            <fieldset>
+                <legend>Group name: </legend>
+                <input type="radio" name="group" id="group-1" value="TYPE 1" checked="true">
+                <label for="group-1" checked> TYPE 1gr. </label>
+
+                <input type="radio" name="group" id="group-2" value="TYPE 2">
+                <label for="group-2"> TYPE 2gr. </label>
+
+                <input type="radio" name="group" id="group-3" value="TYPE 3">
+                <label for="group-3"> TYPE 3gr. </label>
+
+                <input type="radio" name="group" id="group-4" value="TYPE 4">
+                <label for="group-4"> TYPE 4gr. </label>
+
+                <input type="radio" name="group" id="group-5" value="TYPE 5">
+                <label for="group-5"> TYPE 5gr. </label>
+
+                <input type="radio" name="group" id="group-6" value="TYPE 6">
+                <label for="group-6"> TYPE 6gr. </label>
+            </fieldset>
+            </div>
+            <fieldset>
+                <legend>Programming languages:</legend>
+                <div id="languages">
+                    <input type="checkbox" name="planguage" id="java" value="JAVA">
+                    <label for="planguage">JAVA</label>
+<br>
+                    <input type="checkbox" name="planguage" id="js" value="JS">
+                    <label for="planguage">JS</label>
+<br>
+                    <input type="checkbox" name="planguage" id="C" value="C">
+                    <label for="planguage">C</label>
+<br>
+                    <input type="checkbox" name="planguage" id="Cpp" value="C++">
+                    <label for="planguage">C++</label>
+<br>
+                    <input type="checkbox" name="planguage" id="Csharp" value="C#">
+                    <label for="planguage">C#</label>
+<br>
+                    <input type="checkbox" name="planguage" id="python" value="Python">
+                    <label for="planguage">Python</label>               
+                </div>
+            </fieldset>
+            <span id="alert"></span>
+<br>
+        <input type="submit" id="submit" value="Create student">
+    </form>
+
+
+
+
+</body>
+</html>
