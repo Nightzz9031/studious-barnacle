@@ -13,8 +13,7 @@
 .error-alert {
   color: var(--color-error);
 }
-
-div.student-item {
+div.student-item{
   background-color: lightgray;
   border-radius: 10px;
   padding: 5px;
@@ -22,8 +21,7 @@ div.student-item {
   width: 215px;
   border: 2px solid black;
 }
-
-#students-list {
+#students-list{
   display: flex;
   flex-wrap: wrap;
-}/*# sourceMappingURL=style.css.map */
+}
